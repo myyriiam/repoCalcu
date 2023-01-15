@@ -66,3 +66,28 @@ class Operaciones:
         coseno = math.cos(rad)
         print('El COSENO de '+str(numcos)+ ' es : '+ str(coseno))
         print('---------------------------------------- \n')
+    
+    
+class Calculadora:
+    def __init__(self):
+        self.cerrarCalcu = False
+       # self.opcion = 0 
+       # self.suma = Operaciones().suma()  
+    def menuInicio(self):
+        while True:
+           # self.suma = Operaciones.suma()
+            print('\n ********* CALCULADORA *********')
+            print('\n Menú de Operaciones: ' 
+                    + '\n 1. Sumar'
+                    + '\n 2. Restar'
+                    + '\n 3. Multiplicar'
+                    + '\n 4. Dividir'
+                    + '\n 5. Raiz n'
+                    + '\n 6. Exponente n'
+                    + '\n 7. Seno'
+                    + '\n 8. Coseno'
+                    + '\n 9. Salir'
+                    + '\n\n *****************************')
+
+            opcion = int(input('\n Selecciona una operación: ')) #Solicita el valor y lo convierte en entero en la variable
+            #print('La opción seleccionada es: ' + str(opcion))
