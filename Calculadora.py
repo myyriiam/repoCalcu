@@ -50,3 +50,20 @@ class Operaciones:
         exponente = np.power(numexp,potencia)
         print('El EXPONENTE de '+str(numexp)+ ' es : '+ str(exponente))
         print('---------------------------------------- \n')
+   
+    def exponente(self):
+        print('\n------------ EXPONENTE n ------------')
+        numexp = float(input('Ingresa el número a calcular : '))
+        potencia = float(input('Ingresa el número de potencia: '))
+        #exponente = numexp ** potencia
+        exponente = np.power(numexp,potencia)
+        print('El EXPONENTE de '+str(numexp)+ ' es : '+ str(exponente))
+        print('---------------------------------------- \n')
+
+    def seno(self):
+        print('\n------------ SENO ------------')
+        numseno = float(input('Ingresa el angulo en grados : '))
+        radianes = (numseno * math.pi) / 180
+        seno = math.sin(radianes)
+        print('El SENO de '+str(numseno)+ ' es : '+ str(seno))
+        print('---------------------------------------- \n')    
