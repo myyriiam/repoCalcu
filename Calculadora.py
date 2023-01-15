@@ -91,3 +91,38 @@ class Calculadora:
 
             opcion = int(input('\n Selecciona una operación: ')) #Solicita el valor y lo convierte en entero en la variable
             #print('La opción seleccionada es: ' + str(opcion))
+             
+            if opcion == 1:
+                    operaciones = Operaciones()
+                    operaciones.suma()
+            elif opcion == 2:
+                    operaciones = Operaciones()
+                    operaciones.resta()
+            elif opcion == 3:
+                    operaciones = Operaciones()
+                    operaciones.multiplicar()
+            elif opcion == 4:
+                    operaciones = Operaciones()
+                    operaciones.dividir()
+            elif opcion == 5:
+                    operaciones = Operaciones()
+                    operaciones.raiz()
+            elif opcion == 6:
+                    operaciones = Operaciones()
+                    operaciones.exponente()
+            elif opcion == 7:
+                    operaciones = Operaciones()
+                    operaciones.seno()
+            elif opcion == 8:
+                    operaciones = Operaciones()
+                    operaciones.coseno()
+            elif opcion == 9:
+                    print("Cerrando calculadora, adios!")
+                    break
+            else:
+                    print("Opción incorrecta")
+
+calculadora = Calculadora()
+calculadora.menuInicio()
+
+operaciones = Operaciones()
