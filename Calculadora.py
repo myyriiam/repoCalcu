@@ -46,7 +46,6 @@ class Operaciones:
         print('\n------------ EXPONENTE n ------------')
         numexp = float(input('Ingresa el número a calcular : '))
         potencia = float(input('Ingresa el número de potencia: '))
-        #exponente = numexp ** potencia
         exponente = np.power(numexp,potencia)
         print('El EXPONENTE de '+str(numexp)+ ' es : '+ str(exponente))
         print('---------------------------------------- \n')
@@ -71,11 +70,8 @@ class Operaciones:
 class Calculadora:
     def __init__(self):
         self.cerrarCalcu = False
-       # self.opcion = 0 
-       # self.suma = Operaciones().suma()  
     def menuInicio(self):
         while True:
-           # self.suma = Operaciones.suma()
             print('\n ********* CALCULADORA *********')
             print('\n Menú de Operaciones: ' 
                     + '\n 1. Sumar'
@@ -89,7 +85,7 @@ class Calculadora:
                     + '\n 9. Salir'
                     + '\n\n *****************************')
 
-            opcion = int(input('\n Selecciona una operación: ')) #Solicita el valor y lo convierte en entero en la variable
+            opcion = int(input('\n Selecciona una operación: '))
             #print('La opción seleccionada es: ' + str(opcion))
              
             if opcion == 1:
@@ -126,3 +122,5 @@ calculadora = Calculadora()
 calculadora.menuInicio()
 
 operaciones = Operaciones()
+
+
